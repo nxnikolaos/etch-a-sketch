@@ -13,9 +13,13 @@ html{
     flex-wrap: wrap;
 }
 
-.container > div{
-    flex-basis:6.25%;
+.grid-square{
+    flex-basis:calc(100% / 16);
     border:1px solid black; 
     height:53px;
     display: inline-block;
+}
+
+.grid-square:hover{
+    background-color: bisque;
 }
