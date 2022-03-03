@@ -1,0 +1,21 @@
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.container {
+    width:70%;
+    margin:5% auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div{
+    flex-basis:6.25%;
+    border:1px solid black; 
+    height:53px;
+    display: inline-block;
+}
