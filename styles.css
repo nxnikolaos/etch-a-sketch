@@ -7,7 +7,7 @@ html{
 }
 
 .container {
-    width:70%;
+    width:960px;
     margin:5% auto;
     display: flex;
     flex-wrap: wrap;

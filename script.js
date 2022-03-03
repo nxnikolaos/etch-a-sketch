@@ -18,13 +18,25 @@ for(let i=0; i<16; i++){
     }
 }
 
+let gridDimension = 0;
+reset.addEventListener("click",function(){  
+    const squares = document.querySelectorAll('.grid-square');
+    squares.forEach(square=>{
+        square.remove();
+    })    
+    gridDimension = Number(window.prompt("Insert a dimension for the new grid"));
+    while(gridDimension>100){
+        gridDimension = Number(window.prompt("Insert a dimension below 100"));    
+    }
+})
 
+ui.appendChild(reset);
+
+/* Mistake but good to have for future references
 reset.addEventListener("click",function(){  
     const squares = document.querySelectorAll('.grid-square');
     squares.forEach(square=>{
         square.style.backgroundColor = 'white';
     })    
-})
-
-ui.appendChild(reset);
-
+    gridDimension = Number(window.prompt("Insert a dimension for the new grid"));
+})*/
