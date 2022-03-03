@@ -19,7 +19,3 @@ html{
     height:53px;
     display: inline-block;
 }
-
-.grid-square:hover{
-    background-color: bisque;
-}
