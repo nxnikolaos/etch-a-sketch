@@ -1,6 +1,11 @@
 const parent = document.querySelector('.container');
+const ui = document.createElement('div');
+ui.classList.add('ui');
+parent.appendChild(ui);
+
 const reset = document.createElement('button');
 reset.textContent = `Reset!`;
+
 const gridDiv = [];
 for(let i=0; i<16; i++){
     for(let j=0; j<16; j++){
@@ -21,5 +26,5 @@ reset.addEventListener("click",function(){
     })    
 })
 
-parent.appendChild(reset);
+ui.appendChild(reset);
 

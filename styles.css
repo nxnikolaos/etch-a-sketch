@@ -19,3 +19,8 @@ html{
     height:53px;
     display: inline-block;
 }
+
+.ui{
+    flex-basis: 100%;
+    text-align: center;
+}
