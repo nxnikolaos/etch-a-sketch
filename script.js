@@ -28,8 +28,19 @@ reset.addEventListener("click",function(){
     while(gridDimension>100){
         gridDimension = Number(window.prompt("Insert a dimension below 100"));    
     }
-})
+    for(let i=0; i<gridDimension; i++){
+        for(let j=0; j<gridDimension; j++){
+            gridDiv[i,j] = document.createElement('div');
+            gridDiv[i,j].classList.add('grid-square');
+            gridDiv[i,j].style.flexBasis = `calc(100% / ${gridDimension})`;
+            gridDiv[i,j].addEventListener("mouseenter",function(){
+                this.style.backgroundColor = '#e900ff';
+            })
+            parent.appendChild(gridDiv[i,j]);
+        }
+    }
 
+})
 ui.appendChild(reset);
 
 /* Mistake but good to have for future references
