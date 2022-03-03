@@ -1,5 +1,6 @@
 const parent = document.querySelector('.container');
-
+const reset = document.createElement('button');
+reset.textContent = `Reset!`;
 const gridDiv = [];
 for(let i=0; i<16; i++){
     for(let j=0; j<16; j++){
@@ -11,4 +12,14 @@ for(let i=0; i<16; i++){
         parent.appendChild(gridDiv[i,j]);
     }
 }
+
+
+reset.addEventListener("click",function(){  
+    const squares = document.querySelectorAll('.grid-square');
+    squares.forEach(square=>{
+        square.style.backgroundColor = 'white';
+    })    
+})
+
+parent.appendChild(reset);
 
