@@ -1,0 +1,26 @@
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.container {
+    width:960px;
+    margin:5% auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-square{
+    flex-basis:calc(100% / 16);
+    border:1px solid black; 
+    height:53px;
+    display: inline-block;
+}
+
+.ui{
+    flex-basis: 100%;
+    text-align: center;
+}
